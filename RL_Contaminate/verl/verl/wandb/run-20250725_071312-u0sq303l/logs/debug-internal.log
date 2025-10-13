@@ -1,9 +1,0 @@
-{"time":"2025-07-25T07:13:12.933827633Z","level":"INFO","msg":"using version","core version":"0.19.1"}
-{"time":"2025-07-25T07:13:12.933861146Z","level":"INFO","msg":"created symlink","path":"/data2/taoyongding/projects/LUFFY/luffy/verl/wandb/run-20250725_071312-u0sq303l/logs/debug-core.log"}
-{"time":"2025-07-25T07:13:13.167974585Z","level":"INFO","msg":"created new stream","id":"u0sq303l"}
-{"time":"2025-07-25T07:13:13.168046804Z","level":"INFO","msg":"stream: started","id":"u0sq303l"}
-{"time":"2025-07-25T07:13:13.168103296Z","level":"INFO","msg":"writer: Do: started","stream_id":"u0sq303l"}
-{"time":"2025-07-25T07:13:13.168152136Z","level":"INFO","msg":"sender: started","stream_id":"u0sq303l"}
-{"time":"2025-07-25T07:13:13.168148718Z","level":"INFO","msg":"handler: started","stream_id":"u0sq303l"}
-{"time":"2025-07-25T07:13:43.175301375Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
-{"time":"2025-07-25T07:14:15.207689855Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
