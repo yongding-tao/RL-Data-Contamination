@@ -25,7 +25,6 @@
 - ✨ [Getting Started](#getting-started)  
 - 🔧 [Usage](#usage)  
 - 🎯 [Main Results](#main-results)
-<!-- - 📃 [Evaluation](#evaluation)   -->
 - 🎈 [Citation](#citation)  
 
 ---
@@ -134,7 +133,7 @@ Our Self-Critique method significantly outperforms existing detection methods:
 ![main_results](./figs/main_results.png) -->
 
 # 🎈 Citation
-If you find our data, or code useful, please kindly cite our paper.
+If you find our data or code useful, please kindly cite our paper.
 
 ```bib
 @misc{rl-data-contamination,
