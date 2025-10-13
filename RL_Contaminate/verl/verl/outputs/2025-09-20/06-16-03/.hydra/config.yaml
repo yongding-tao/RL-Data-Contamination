@@ -1,0 +1,223 @@
+data:
+  tokenizer: null
+  train_files: /nfsEDS/taoyongding/projects/Data_Contamination/benchmarks/KK/ppl7/train.parquet
+  val_files: /nfsEDS/taoyongding/projects/Data_Contamination/benchmarks/KK/ppl7/test.parquet
+  prompt_key: prompt
+  max_prompt_length: 1024
+  max_response_length: 3072
+  train_batch_size: 128
+  val_batch_size: 256
+  return_raw_input_ids: false
+  return_raw_chat: false
+  reward_impl_version: 3
+  filter_targets: false
+  shuffle: true
+  sample_target_ratio: 1.0
+  filter_accuracy: false
+  accuracy_lower_bound: 0.0
+  accuracy_upper_bound: 1.0
+  add_tgt_with_acc: false
+  add_tgt_acc_upper_bound: 0.5
+  disable_truncation_advantage: false
+actor_rollout_ref:
+  hybrid_engine: true
+  model:
+    path: /nfsEDS/wangtian/MODELS/Qwen2.5-3B-Instruct
+    external_lib: null
+    override_config: {}
+    enable_gradient_checkpointing: true
+    use_remove_padding: true
+  actor:
+    strategy: fsdp
+    ppo_mini_batch_size: 1
+    ppo_micro_batch_size: 1
+    use_dynamic_bsz: true
+    ppo_max_token_len_per_gpu: 16384
+    grad_clip: 1.0
+    clip_ratio: 0.2
+    clip_upper_bound: 1.0
+    entropy_coeff: 0.001
+    use_kl_loss: false
+    kl_loss_coef: 0.0
+    kl_loss_type: low_var_kl
+    ppo_epochs: 1
+    shuffle: false
+    ulysses_sequence_parallel_size: 1
+    optim:
+      lr: 1.0e-06
+      lr_warmup_steps_ratio: 0.0
+      min_lr_ratio: null
+      warmup_style: constant
+      total_training_steps: -1
+    fsdp_config:
+      wrap_policy:
+        min_num_params: 0
+      param_offload: false
+      grad_offload: false
+      optimizer_offload: false
+      fsdp_size: -1
+    use_sft_prefix_reward: false
+    use_sft_reward: false
+    use_off_policy_loss: true
+    off_policy_loss_impl: token
+    off_policy_cliprange: 0.2
+    off_policy_normalize: false
+    use_off_policy_probs: false
+    use_off_policy_clip: false
+    off_policy_max_clip: -1
+    off_policy_min_clip: -1
+    off_policy_reshape: no_reshape
+    off_policy_reshape_weight: 0.1
+    off_policy_reshape_pow_exp: 0.5
+    on_policy_reshape: no_reshape
+    on_policy_reshape_weight: 0.1
+    on_policy_reshape_pow_exp: 0.5
+    sft_prefix_reward_weight: 1.0
+    all_max_clip: -1
+    use_ppo_kl_loss: false
+    ppo_kl_loss_coef: 0.01
+    use_adaptive_temperature: false
+    use_adaptive_temperature_fixed: false
+    adaptive_temperature_clip: -1
+    adaptive_temperature_target_entropy: 1.0
+    alpha_lr: 0.01
+    debug: false
+    use_target_lst: false
+    loss_remove_token_mean: true
+    loss_remove_clip: false
+    sft_loss_coef: 1.0
+    use_sft_multitask_loss: false
+  ref:
+    fsdp_config:
+      param_offload: true
+      wrap_policy:
+        min_num_params: 0
+    log_prob_micro_batch_size: 128
+    log_prob_use_dynamic_bsz: ${actor_rollout_ref.actor.use_dynamic_bsz}
+    log_prob_max_token_len_per_gpu: ${actor_rollout_ref.actor.ppo_max_token_len_per_gpu}
+    ulysses_sequence_parallel_size: ${actor_rollout_ref.actor.ulysses_sequence_parallel_size}
+    use_ref: false
+  rollout:
+    name: vllm
+    temperature: 1.0
+    val_temperature: 0.6
+    top_k: -1
+    top_p: 1
+    prompt_length: ${data.max_prompt_length}
+    response_length: ${data.max_response_length}
+    dtype: bfloat16
+    gpu_memory_utilization: 0.3
+    ignore_eos: false
+    enforce_eager: true
+    free_cache_engine: true
+    load_format: dummy_dtensor
+    tensor_model_parallel_size: 2
+    max_num_batched_tokens: 8192
+    max_num_seqs: 1024
+    log_prob_micro_batch_size: 128
+    log_prob_use_dynamic_bsz: ${actor_rollout_ref.actor.use_dynamic_bsz}
+    log_prob_max_token_len_per_gpu: ${actor_rollout_ref.actor.ppo_max_token_len_per_gpu}
+    enable_chunked_prefill: true
+    do_sample: true
+    'n': 8
+    n_val: 1
+    prefix_strategy: random
+    prefix_steps: 1000
+    prefix_linear_max_ratio: 0.8
+    prefix_linear_max_var: 0.1
+    max_prefix_len: 3072
+    min_prefix_ratio: 0.0
+    max_prefix_ratio: 0.0
+    prefix_reward_strategy: all
+    prefix_reward_weight_alpha: 1.0
+    prefix_reward_weight_beta: 1.0
+    prefix_share_across_samples: false
+    n_prefix: 1
+critic:
+  strategy: fsdp
+  optim:
+    lr: 1.0e-05
+    lr_warmup_steps_ratio: 0.0
+    min_lr_ratio: null
+    warmup_style: constant
+    total_training_steps: -1
+  model:
+    path: ~/models/deepseek-llm-7b-chat
+    tokenizer_path: ${actor_rollout_ref.model.path}
+    override_config: {}
+    external_lib: ${actor_rollout_ref.model.external_lib}
+    enable_gradient_checkpointing: true
+    use_remove_padding: false
+    fsdp_config:
+      param_offload: false
+      grad_offload: false
+      optimizer_offload: false
+      wrap_policy:
+        min_num_params: 0
+      fsdp_size: -1
+  ppo_mini_batch_size: ${actor_rollout_ref.actor.ppo_mini_batch_size}
+  ppo_micro_batch_size: 64
+  forward_micro_batch_size: ${critic.ppo_micro_batch_size}
+  use_dynamic_bsz: ${actor_rollout_ref.actor.use_dynamic_bsz}
+  ppo_max_token_len_per_gpu: 32768
+  forward_max_token_len_per_gpu: ${critic.ppo_max_token_len_per_gpu}
+  ulysses_sequence_parallel_size: 1
+  ppo_epochs: ${actor_rollout_ref.actor.ppo_epochs}
+  shuffle: ${actor_rollout_ref.actor.shuffle}
+  grad_clip: 1.0
+  cliprange_value: 0.5
+reward_model:
+  enable: false
+  strategy: fsdp
+  model:
+    input_tokenizer: ${actor_rollout_ref.model.path}
+    path: ~/models/FsfairX-LLaMA3-RM-v0.1
+    external_lib: ${actor_rollout_ref.model.external_lib}
+    use_remove_padding: false
+    fsdp_config:
+      min_num_params: 0
+      param_offload: false
+      fsdp_size: -1
+  micro_batch_size: 64
+  max_length: null
+  ulysses_sequence_parallel_size: 1
+  use_dynamic_bsz: ${critic.use_dynamic_bsz}
+  forward_max_token_len_per_gpu: ${critic.forward_max_token_len_per_gpu}
+algorithm:
+  gamma: 1.0
+  lam: 1.0
+  adv_estimator: grpo
+  kl_penalty: kl
+  kl_ctrl:
+    type: fixed
+    kl_coef: 0.0
+  grpo_use_std: false
+  surprisal_base: 0.0
+trainer:
+  rejection_sample: false
+  rejection_sample_multiplier: 2
+  total_epochs: 5
+  total_training_steps: null
+  project_name: GRPO
+  experiment_name: Qwen2.5-3B-Instruct-MathMIA_kk_ppl7
+  logger:
+  - console
+  - wandb
+  nnodes: 1
+  n_gpus_per_node: 8
+  save_freq: 100
+  max_optim_to_keep: 2
+  resume_mode: auto
+  resume_from_path: false
+  test_freq: 1
+  critic_warmup: 0
+  default_hdfs_dir: null
+  default_local_dir: /nfsEDS/taoyongding/checkpoints/${trainer.project_name}/${trainer.experiment_name}
+  debug: false
+  add_full_target_when_none: false
+  skip_valid_mask: false
+  acc_rebatch: false
+  skip_by_step: false
+  val_before_train: false
+  save_by_epoch: true
+  save_final_checkpoint: true

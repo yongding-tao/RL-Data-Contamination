@@ -1,0 +1,87 @@
+{"time":"2025-07-19T14:05:19.966895665Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-07-19T14:05:19.966931716Z","level":"INFO","msg":"created symlink","path":"/data2/taoyongding/projects/LUFFY/luffy/verl/wandb/run-20250719_140519-d2md965l/logs/debug-core.log"}
+{"time":"2025-07-19T14:05:20.215054621Z","level":"INFO","msg":"created new stream","id":"d2md965l"}
+{"time":"2025-07-19T14:05:20.21513735Z","level":"INFO","msg":"stream: started","id":"d2md965l"}
+{"time":"2025-07-19T14:05:20.21519763Z","level":"INFO","msg":"writer: Do: started","stream_id":"d2md965l"}
+{"time":"2025-07-19T14:05:20.21522271Z","level":"INFO","msg":"handler: started","stream_id":"d2md965l"}
+{"time":"2025-07-19T14:05:20.215258525Z","level":"INFO","msg":"sender: started","stream_id":"d2md965l"}
+{"time":"2025-07-19T14:05:21.294937928Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-19T14:08:22.58162237Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T14:43:08.672948535Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-19T14:44:52.37848395Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T14:45:24.635873965Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-19T14:45:47.901992518Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T14:45:52.248720471Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-19T14:51:22.23863202Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-19T14:51:41.760792544Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-19T14:51:46.298216951Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-19T14:54:22.274602916Z","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: context deadline exceeded (Client.Timeout or context cancellation while reading body)"}
+{"time":"2025-07-19T14:54:22.538851407Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T14:54:24.344827149Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T14:54:54.864951607Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-19T14:54:57.5291051Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-19T14:58:13.460992079Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-19T15:22:51.422125647Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T15:23:21.406245598Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T15:32:54.384910801Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T15:33:24.827115814Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T15:33:41.305431142Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-19T15:33:44.90302602Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T15:36:08.571413128Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T15:36:13.888622633Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T15:36:23.165931796Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T15:36:36.113218509Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T15:36:37.345000231Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-19T15:36:40.758418154Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T15:36:57.730900995Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T15:37:04.771331002Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T16:01:38.876745508Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T16:01:44.447148456Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-19T16:01:47.891563198Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": write tcp 10.103.255.6:53664->10.103.255.1:7890: write: broken pipe"}
+{"time":"2025-07-19T16:16:33.668137472Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-19T16:16:53.921879963Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T16:16:59.118856889Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-19T16:17:04.40242724Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T16:17:06.297584523Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-19T16:17:09.823469609Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T16:17:17.901997654Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T16:17:18.463683158Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-19T16:19:23.879456516Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-19T16:36:51.880038553Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T17:23:51.885663414Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T17:28:51.904331557Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T17:32:06.905311213Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T17:40:06.872534464Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T18:20:21.88274372Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T18:20:39.894972432Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T18:20:55.52374632Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-19T18:32:30.086510139Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-19T19:27:53.502152044Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T20:33:08.500963335Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T23:10:38.481393445Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T23:11:23.50192621Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T23:37:23.500557543Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T23:37:38.50038157Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-19T23:39:53.501734768Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T00:45:08.501778931Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T00:59:53.492547256Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T01:01:53.486314991Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T01:15:49.125920509Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-20T01:15:54.253734811Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-20T01:16:01.915698345Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-20T01:16:04.47570463Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-20T01:16:15.743866493Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": unexpected EOF"}
+{"time":"2025-07-20T01:16:23.37526353Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T01:16:38.781271696Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T01:25:19.26492916Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-20T01:25:19.384384851Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T01:25:34.391789852Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T01:25:34.968216326Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": unexpected EOF"}
+{"time":"2025-07-20T01:25:39.927778753Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T01:25:40.485528704Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2025-07-20T01:25:47.613615436Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T02:18:31.395506161Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T03:35:16.410563918Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T04:19:01.392404331Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T04:38:31.390498488Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}
+{"time":"2025-07-20T04:51:31.386114505Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yongding-tao-peking-university/GRPO/d2md965l/file_stream\": EOF"}

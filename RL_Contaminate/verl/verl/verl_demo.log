@@ -1,0 +1,7 @@
+Could not override 'actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu'.
+To append to your config use +actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu=4
+Key 'ppo_micro_batch_size_per_gpu' is not in struct
+    full_key: actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu
+    object_type=dict
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

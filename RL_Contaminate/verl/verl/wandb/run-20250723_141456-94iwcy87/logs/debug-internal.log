@@ -1,0 +1,13 @@
+{"time":"2025-07-23T14:14:56.779428321Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-07-23T14:14:56.779461667Z","level":"INFO","msg":"created symlink","path":"/data2/taoyongding/projects/LUFFY/luffy/verl/wandb/run-20250723_141456-94iwcy87/logs/debug-core.log"}
+{"time":"2025-07-23T14:14:57.015572699Z","level":"INFO","msg":"created new stream","id":"94iwcy87"}
+{"time":"2025-07-23T14:14:57.015668193Z","level":"INFO","msg":"stream: started","id":"94iwcy87"}
+{"time":"2025-07-23T14:14:57.015712995Z","level":"INFO","msg":"sender: started","stream_id":"94iwcy87"}
+{"time":"2025-07-23T14:14:57.015712151Z","level":"INFO","msg":"writer: Do: started","stream_id":"94iwcy87"}
+{"time":"2025-07-23T14:14:57.015771515Z","level":"INFO","msg":"handler: started","stream_id":"94iwcy87"}
+{"time":"2025-07-23T14:14:57.091242965Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.103.255.6:53724->10.103.255.1:7890: read: connection reset by peer"}
+{"time":"2025-07-23T14:14:59.471334788Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.103.255.6:53756->10.103.255.1:7890: read: connection reset by peer"}
+{"time":"2025-07-23T14:15:04.102122565Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.103.255.6:53768->10.103.255.1:7890: read: connection reset by peer"}
+{"time":"2025-07-23T14:15:13.016587304Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.103.255.6:53790->10.103.255.1:7890: read: connection reset by peer"}
+{"time":"2025-07-23T14:15:32.253695213Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.103.255.6:53834->10.103.255.1:7890: read: connection reset by peer"}
+{"time":"2025-07-23T14:16:11.163984272Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.103.255.6:53912->10.103.255.1:7890: read: connection reset by peer"}
