@@ -1,3 +1,5 @@
+
+
 <div align="center">
 
 <h1 style="display: flex; justify-content: center; align-items: center; gap: 10px; margin: 0;">
@@ -48,7 +50,7 @@ As RL post-training becomes pivotal for advancing LLM reasoning, the absence of 
 
 
 
-<!-- ![workflow](./figs/workflow.png) -->
+<!-- ![workflow](./figs/motivation.png) -->
 
 ---
 
@@ -63,11 +65,8 @@ You can install the dependencies by running the following commands:
 conda create -n self_critique python=3.10
 conda activate self_critique
 
-cd RL_Contaminate/verl
+cd RL_Contaminate/verl/verl
 pip install -r requirements.txt
-pip install -e .
-
-cd verl
 pip install -e .
 ```
 
